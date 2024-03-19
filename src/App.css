@@ -1,3 +1,17 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product .product-item {
+  padding: 10px;
+  border: 1px solid #eee;
+  box-shadow: rgba(0 , 0, 0, 0.5);
+  list-style: none;
+
+}
+
 .App {
   text-align: center;
 }
