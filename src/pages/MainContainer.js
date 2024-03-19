@@ -1,7 +1,8 @@
 import React from "react"
-import { addToCart, removeFromCart, emptyCart } from './redux/action';
+import { addToCart, removeFromCart, emptyCart } from '../redux/action';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProducts } from './redux/productAction';
+import { fetchProducts } from '../redux/productAction';
+import { Link } from "react-router-dom";
 
 export default function MainContainer() {
     const dispatch = useDispatch();
@@ -18,6 +19,8 @@ export default function MainContainer() {
 
     return (
         <div>
+            <Link to="/cart">Goto Cart</Link>
+
           {
             isLoading ? (
               <div>

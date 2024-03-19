@@ -1,4 +1,11 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
+
 .product {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -10,6 +17,41 @@
   box-shadow: rgba(0 , 0, 0, 0.5);
   list-style: none;
 
+}
+
+.cart-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart-container table {
+  border-collapse: collapse;
+  border: 1px solid #eee;
+
+}
+
+.cart-container table tr td, .cart-container table tr th {
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.cart-container .cart-summary {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.cart-container .cart-summary label {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+
+}
+
+.input-field {
+  border: 1px solid #eee;
+  padding: 10px 15px;
+  margin-bottom: 20px;
 }
 
 .App {
